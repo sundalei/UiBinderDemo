@@ -4,6 +4,7 @@ import org.gwtproject.tutorial.client.disclosure.DisclosurePanelExample;
 import org.gwtproject.tutorial.client.intro.IntroPanel;
 import org.gwtproject.tutorial.client.login1.LoginDialogBox_v1;
 import org.gwtproject.tutorial.client.logindialog.LoginDialogBox;
+import org.gwtproject.tutorial.client.radio.RadioButtonExample;
 import org.gwtproject.tutorial.client.split.SplitLayoutPanelExample;
 import org.gwtproject.tutorial.client.stack.StackPanelExample;
 
@@ -92,6 +93,11 @@ public class ExamplePanel extends Composite {
 	@UiHandler("hideLoginExAlt")
 	void hideLoginExampleAlt(ClickEvent event) {
 		altLoginDialog.hide();
+	}
+	
+	@UiHandler("radioButtonsEx")
+	void radioButtonsExample(ClickEvent event) {
+		setWidgetAsExample(new RadioButtonExample());
 	}
 	
 	private void setWidgetAsExample(Widget widget) {
