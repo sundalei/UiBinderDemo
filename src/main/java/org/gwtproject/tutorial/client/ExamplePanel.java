@@ -35,6 +35,7 @@ public class ExamplePanel extends Composite {
 	
 	private LoginDialogBox_v1 loginDialogBox_v1 = new LoginDialogBox_v1();
 	private LoginDialogBox loginDialog = new LoginDialogBox();
+	private LoginDialogBox altLoginDialog = new LoginDialogBox(true);
 	
 	@UiField
 	Panel exampleArea;
@@ -81,6 +82,16 @@ public class ExamplePanel extends Composite {
 	@UiHandler("hideLoginEx")
 	void hideLoginExample(ClickEvent event) {
 		loginDialog.hide();
+	}
+	
+	@UiHandler("showLoginExAlt")
+	void showLoginExampleAlt(ClickEvent event) {
+		altLoginDialog.show();
+	}
+
+	@UiHandler("hideLoginExAlt")
+	void hideLoginExampleAlt(ClickEvent event) {
+		altLoginDialog.hide();
 	}
 	
 	private void setWidgetAsExample(Widget widget) {
