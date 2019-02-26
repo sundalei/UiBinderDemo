@@ -1,5 +1,6 @@
 package org.gwtproject.tutorial.client;
 
+import org.gwtproject.tutorial.client.bundle.ClientBundleExample;
 import org.gwtproject.tutorial.client.disclosure.DisclosurePanelExample;
 import org.gwtproject.tutorial.client.intro.IntroPanel;
 import org.gwtproject.tutorial.client.login1.LoginDialogBox_v1;
@@ -98,6 +99,11 @@ public class ExamplePanel extends Composite {
 	@UiHandler("radioButtonsEx")
 	void radioButtonsExample(ClickEvent event) {
 		setWidgetAsExample(new RadioButtonExample());
+	}
+	
+	@UiHandler("clientBundleEx")
+	void clientBundleExample(ClickEvent event) {
+		setWidgetAsExample(new ClientBundleExample());
 	}
 	
 	private void setWidgetAsExample(Widget widget) {

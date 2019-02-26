@@ -1,0 +1,10 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:with type="org.gwtproject.tutorial.client.bundle.MyBundle" field="myBundle" />
+
+	<g:HTMLPanel>
+		<g:Image resource="{myBundle.logo}" />
+		<div class="{myBundle.style.bigText}">Welcome!</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 
